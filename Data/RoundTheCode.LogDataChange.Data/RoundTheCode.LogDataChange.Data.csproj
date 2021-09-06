@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\ChangeDb\**" />
+    <EmbeddedResource Remove="Migrations\ChangeDb\**" />
+    <None Remove="Migrations\ChangeDb\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200624101123_Init.cs" />
+    <Compile Remove="Migrations\20200624101123_Init.Designer.cs" />
+    <Compile Remove="Migrations\20200628084623_Engine.cs" />
+    <Compile Remove="Migrations\20200628084623_Engine.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\ChangeDb\ChangeDbContextModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="bin\Debug\netcoreapp3.1\appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="bin\Debug\netcoreapp3.1\RoundTheCode.LogDataChange.Data.deps.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\RoundTheCode.LogDataChange.Data.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp3.1\RoundTheCode.LogDataChange.Data.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\RoundTheCode.LogDataChange.Data.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\RoundTheCode.LogDataChange.Data.pdb" />
+  </ItemGroup>
+
+</Project>

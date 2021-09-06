@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoundTheCode.LogDataChange.Data", "Data\RoundTheCode.LogDataChange.Data\RoundTheCode.LogDataChange.Data.csproj", "{FE2C98CB-AD1D-45A6-B2C2-13473F1A1ED9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{E03CEEA1-6CA1-4D8B-B844-2CC76D16876F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{BCFE5AB4-DAFC-442F-BA41-EC3C398E6CB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoundTheCode.LogDataChange.Web.Api", "Web\RoundTheCode.LogDataChange.Web.Api\RoundTheCode.LogDataChange.Web.Api.csproj", "{76D2B06E-04DE-4678-A448-19F530072A0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{EBC5E6CF-974E-4462-BDE9-C299B39BC5EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundTheCode.LogDataChange.Services", "Services\RoundTheCode.LogDataChange.Services\RoundTheCode.LogDataChange.Services.csproj", "{ED6CBCF4-7838-4822-B338-B409547B9367}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{F9D57358-7ECB-4189-883D-6C8F6C322F17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoundTheCode.LogDataChange.Testing.CudOperations", "Testing\RoundTheCode.LogDataChange.Testing.CudOperations\RoundTheCode.LogDataChange.Testing.CudOperations.csproj", "{A1550951-48D5-41DD-B586-5660178630ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE2C98CB-AD1D-45A6-B2C2-13473F1A1ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2C98CB-AD1D-45A6-B2C2-13473F1A1ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2C98CB-AD1D-45A6-B2C2-13473F1A1ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2C98CB-AD1D-45A6-B2C2-13473F1A1ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D2B06E-04DE-4678-A448-19F530072A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D2B06E-04DE-4678-A448-19F530072A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D2B06E-04DE-4678-A448-19F530072A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D2B06E-04DE-4678-A448-19F530072A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED6CBCF4-7838-4822-B338-B409547B9367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED6CBCF4-7838-4822-B338-B409547B9367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED6CBCF4-7838-4822-B338-B409547B9367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED6CBCF4-7838-4822-B338-B409547B9367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1550951-48D5-41DD-B586-5660178630ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1550951-48D5-41DD-B586-5660178630ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1550951-48D5-41DD-B586-5660178630ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1550951-48D5-41DD-B586-5660178630ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE2C98CB-AD1D-45A6-B2C2-13473F1A1ED9} = {E03CEEA1-6CA1-4D8B-B844-2CC76D16876F}
+		{76D2B06E-04DE-4678-A448-19F530072A0C} = {BCFE5AB4-DAFC-442F-BA41-EC3C398E6CB7}
+		{ED6CBCF4-7838-4822-B338-B409547B9367} = {EBC5E6CF-974E-4462-BDE9-C299B39BC5EB}
+		{A1550951-48D5-41DD-B586-5660178630ED} = {F9D57358-7ECB-4189-883D-6C8F6C322F17}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBA2A145-6E94-41CB-8E87-D22364CD2997}
+	EndGlobalSection
+EndGlobal

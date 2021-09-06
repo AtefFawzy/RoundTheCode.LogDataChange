@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\RoundTheCode.LogDataChange.Data\RoundTheCode.LogDataChange.Data.csproj" />
+    <ProjectReference Include="..\..\Services\RoundTheCode.LogDataChange.Services\RoundTheCode.LogDataChange.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,91 @@
+{
+	"variables": [],
+	"info": {
+		"name": "RoundTheCode Log Data Change",
+		"_postman_id": "66cf4795-37d1-a084-c2ea-bd829a4b6a42",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"url": "https://localhost:2001/api/video-game",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Title\": \"Friday The 13th: The Game\",\n\t\"Publisher\": \"Gun Media\",\n\t\"ReleaseDate\": \"2017-05-23\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"url": "https://localhost:2001/api/video-game/change/8",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Title\": \"Friday The 13th: The Game\",\n\t\"Publisher\": \"Gun Media\",\n\t\"ReleaseDate\": \"2017-05-23\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Partial Update",
+			"request": {
+				"url": "https://localhost:2001/api/video-game/11",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n\t\t\"value\": \"Friday the 13th\",\n\t\t\"path\": \"/title\",\n\t\t\"op\": \"replace\"\n\t}\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"url": "https://localhost:2001/api/video-game/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
